@@ -219,11 +219,11 @@ p{
     margin: 15px;
     font-size: 18px;
     color: #ffffff;
-    cursor: pointer;
 }
 
 .each-footer-link{
     margin: 40px;
+    cursor: pointer;
 }
 .footer-link-pipes{
     color: #ffffff;
