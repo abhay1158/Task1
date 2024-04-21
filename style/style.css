@@ -38,6 +38,7 @@ p{
     width: 250px;
     height: auto;
     margin: 20px 20px;
+    cursor: pointer;
 }
 
 /* ===================================menu css starts===========================================*/
@@ -91,7 +92,7 @@ p{
 }
 
 
-/* =========================================Css of icons be===================================================== */
+/* =========================================Css of icons in between loren ipsum headings===================================================== */
 .media-icons {
     font-size: 48px;
     line-height: 68px;
@@ -129,7 +130,7 @@ p{
 
 }
 
-/* ===================================Tab Css start--======================================================= */
+/* ===================================Tabs Css start--======================================================= */
 .tab-section{
     position: relative;
     width: 50%;
@@ -149,6 +150,7 @@ p{
 }
 
 .tab-button{
+    cursor: pointer;
     display: flex;
     justify-content: center;
     color: #ffffff;
@@ -179,7 +181,7 @@ p{
 }
 
 
-/* ===========================================Footer Css star====================================================== */
+/* ===========================================Footer Css start====================================================== */
 .footer {
 
     align-items: center;
@@ -209,14 +211,15 @@ p{
 }
 
 
-/* ----===================================Footer links css===========================================*/
+/* ===================================Footer links css===========================================*/
 #footer-links {
     display: flex;
-     justify-content: center;   
+    justify-content: center;   
     align-items: center;
     margin: 15px;
     font-size: 18px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .each-footer-link{
@@ -238,6 +241,7 @@ p{
     width:150px;
     height: auto;
     margin-bottom: 25px;
+    cursor: pointer;
 
 }
 
