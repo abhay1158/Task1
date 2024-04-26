@@ -1,0 +1,259 @@
+$primary-color: #000000
+$secondary-color: #ffffff
+
+=flex-styling($justify: center, $align: center)
+    display: flex
+    justify-content: $justify
+    align-items: $align
+
+=font-size($size)
+    font-size: $size
+
+=dimension($width, $height)
+    width: $width
+    height: $height
+
+=padding($top, $right, $bottom, $left)
+    padding-top: $top
+    @if $right
+      padding-right: $right
+    @if $bottom
+      padding-bottom: $bottom
+    @if $left
+      padding-left: $left
+
+=margin($top, $right, $bottom, $left)
+    margin-top: $top
+    @if $right
+      margin-right: $right
+    @if $bottom
+      margin-bottom: $bottom
+    @if $left
+      margin-left: $left
+
+body
+    +margin(0, 0, 0, 0)
+    +padding(0, 0, 0, 0)
+    font-family: "Roboto"
+
+h2
+    +font-size(35px)
+    color: $primary-color
+
+p
+    +font-size(25)
+    text-align: left
+    color: $primary-color
+    line-height: 35px
+
+.top-nav
+    +dimension(auto, auto)
+    background-color: $primary-color
+    border: 0px solid $primary-color
+    +flex-styling(space-between, null)
+
+#top-logo
+    +dimension(250px, auto)
+    +margin(20px, 20px, 20px, 20px)
+    cursor: pointer
+
+.menus
+    +font-size(20px)
+    text-align: center
+    display: flex
+
+    ul
+        +flex-styling(null, center)
+        +margin(7px, 7px, 7px, 7px)
+
+        li
+            list-style: none
+            +margin(30px, 30px, 30px, 30px)
+            cursor: pointer
+
+            a
+                text-decoration: none
+                color: $secondary-color
+
+#menu1 i
+    +margin(5px, 5px, 5px, 5px)
+    color: $secondary-color
+
+.dummy-images img
+    +dimension(100%, null)
+    cursor: not-allowed
+    +margin(0, 0, 0, 0)
+    +padding(0, 0, 0, 0)
+
+.media-icons
+    +font-size(48px)
+    line-height: 68px
+    text-align: center
+
+.inner-icons
+    +flex-styling(space-around)
+
+.section
+    +flex-styling(space-around, null)
+    +margin(null, null, 50px, null)
+
+    div
+        +dimension(25%, null)
+        text-align: left
+
+    img
+        align-items: left
+        +dimension(240px, auto)
+        +padding(5px, 5px, 5px, 5px)
+
+.tab-section
+    position: relative
+    +dimension(50%, null)
+    left: 20%
+    top: 0
+
+.tabs-content
+    display: flex
+    +margin(null, null, 50px, null)
+    filter: drop-shadow(0 0 5px #c1bebe)
+    background-color: $secondary-color
+
+.tab-button
+    display: flex
+
+    &-structure
+        cursor: pointer
+        +flex-styling
+        color: $secondary-color
+        +dimension(100px, 50px)
+        +margin(0px, 0px, 0px, 0px)
+        +padding(7px, 13px, 7px, 13px)
+        +font-size(20px)
+        border: 0px
+
+#tabBtn1
+    background: #ff0000
+
+#tabBtn2
+    background: grey
+
+#tab2-content
+    display: none
+
+.footer
+    align-items: center
+    +dimension(auto, auto)
+    background-color: $primary-color
+
+    &-logo
+        +flex-styling
+
+        img
+            +dimension(150px, auto)
+            +margin(25px, 25px, 25px, 25px)
+            cursor: pointer
+
+    &-link
+        +flex-styling
+        +margin(15px, 15px, 15px, 15px)
+        color: $secondary-color
+
+        &-each
+            +margin(40px, 40px, 40px, 40px)
+            cursor: pointer
+
+        &-pipes
+            color: $secondary-color
+
+.subscribe
+    +flex-styling
+    +margin(10px, 0px, 0px, 0px)
+
+    &-btn
+        justify-content: center
+        cursor: pointer
+        +dimension(190px, 44px)
+        +margin(15px, null, null, null)
+        border-radius: 37px
+        background-color: #ed3155
+        border: 1px solid $primary-color
+        color: $secondary-color
+
+
+// =======================================Styliing to make it responsive==========================================================
+@media screen and (min-device-width: 320px) and (max-device-width: 767px) 
+    body 
+        min-width: 600px
+        max-width: 550px
+    
+    
+    h2
+        +font-size(12px)
+    
+    p
+        +font-size(15)
+        line-height: 15px
+    
+    
+    // /* ===================================menu css starts===========================================*/
+    .menus
+        +font-size(16px)
+    
+    .menus ul li
+        margin-left: 8px
+
+    #menu1 i
+        margin-left: 1px
+    
+    .media-icons
+        +font-size(48px)
+        
+        
+    
+    .section img
+        +dimension(160px, auto)
+    
+    .footer
+        +dimension(auto,auto)
+        
+        &-link 
+            +font-size(18)
+
+            &-each
+                +margin(20px,20px,20px,20px)
+        
+        
+
+
+// =======================================================================================================================
+
+// @media screen and (min-device-width: 320px) and (max-device-width: 768px) 
+    body 
+        min-width: 600px
+        max-width: 950px
+        +margin(0, 0, 0, 0)
+        +padding(0, 0, 0, 0)
+    
+    
+    h2
+        +font-size(12px)
+    
+    p
+        +font-size(15)
+        line-height: 15px
+    
+    
+    // /* ===================================menu css starts===========================================*/
+    
+    #menu1 i
+        margin-left: 1px
+    
+    
+    
+    .section img
+        +dimension(160px, auto)
+    
+    
+    .footer-link 
+        +font-size(18)
+        
