@@ -32,8 +32,8 @@ $secondary-color: #ffffff
       margin-left: $left
 
 body
-    +margin(0, 0, 0, 0)
-    +padding(0, 0, 0, 0)
+    +margin(0px, 0px, 0px, 0px)
+    +padding(0px, 0px, 0px, 0px)
     font-family: "Roboto"
 
 h2
@@ -41,7 +41,7 @@ h2
     color: $primary-color
 
 p
-    +font-size(25)
+    +font-size(25px)
     text-align: left
     color: $primary-color
     line-height: 35px
@@ -82,8 +82,8 @@ p
 .dummy-images img
     +dimension(100%, null)
     cursor: not-allowed
-    +margin(0, 0, 0, 0)
-    +padding(0, 0, 0, 0)
+    +margin(0px, 0px, 0px, 0px)
+    +padding(0px, 0px, 0px, 0px)
 
 .media-icons
     +font-size(48px)
@@ -110,12 +110,12 @@ p
     position: relative
     +dimension(50%, null)
     left: 20%
-    top: 0
+    top: 0px
 
 .tabs-content
     display: flex
     +margin(null, null, 50px, null)
-    filter: drop-shadow(0 0 5px #c1bebe)
+    filter: drop-shadow(0px 0px 5px #c1bebe)
     background-color: $secondary-color
 
 .tab-button
@@ -179,28 +179,27 @@ p
         border: 1px solid $primary-color
         color: $secondary-color
 
-
-// =======================================Styliing to make it responsive==========================================================
-@media screen and (min-device-width: 320px) and (max-device-width: 767px) 
+// =======================================Styling to make it responsive==========================================================
+@media screen and (max-width:320px) 
     body 
-        min-width: 600px
-        max-width: 550px
+        min-width: fit-content
+        +dimension(fit-content,auto)
     
     
     h2
         +font-size(12px)
     
     p
-        +font-size(15)
+        +font-size(15px)
         line-height: 15px
     
     
     // /* ===================================menu css starts===========================================*/
     .menus
-        +font-size(16px)
+        +font-size(14px)
     
     .menus ul li
-        margin-left: 8px
+        margin-left: 6px
 
     #menu1 i
         margin-left: 1px
@@ -217,7 +216,7 @@ p
         +dimension(auto,auto)
         
         &-link 
-            +font-size(18)
+            +font-size(18px)
 
             &-each
                 +margin(20px,20px,20px,20px)
@@ -228,32 +227,131 @@ p
 // =======================================================================================================================
 
 // @media screen and (min-device-width: 320px) and (max-device-width: 768px) 
+@media screen and (max-width:420px) 
     body 
-        min-width: 600px
-        max-width: 950px
-        +margin(0, 0, 0, 0)
-        +padding(0, 0, 0, 0)
+        min-width: fit-content
+        +dimension(fit-content,auto)
     
     
     h2
         +font-size(12px)
     
     p
-        +font-size(15)
+        +font-size(15px)
         line-height: 15px
     
     
     // /* ===================================menu css starts===========================================*/
+    .menus
+        +font-size(14px)
     
+    .menus ul li
+        margin-left: 6px
+
     #menu1 i
         margin-left: 1px
     
-    
+    .media-icons
+        +font-size(48px)
+        
+        
     
     .section img
         +dimension(160px, auto)
     
-    
-    .footer-link 
-        +font-size(18)
+    .footer
+        +dimension(auto,auto)
         
+        &-link 
+            +font-size(18px)
+
+            &-each
+                +margin(20px,20px,20px,20px)
+        
+
+
+
+@media screen and (max-width:720px)
+    body 
+        min-width: fit-content
+        +dimension(fit-content,auto)
+    
+    
+    h2
+        +font-size(12px)
+    
+    p
+        +font-size(15px)
+        line-height: 15px
+    
+    
+    // /* ===================================menu css starts===========================================*/
+    .menus
+        +font-size(14px)
+    
+    .menus ul li
+        margin-left: 6px
+
+    #menu1 i
+        margin-left: 1px
+    
+    .media-icons
+        +font-size(48px)
+        
+        
+    
+    .section img
+        +dimension(160px, auto)
+    
+    .footer
+        +dimension(auto,auto)
+        
+        &-link 
+            +font-size(18px)
+
+            &-each
+                +margin(20px,20px,20px,20px)
+    
+
+
+@media screen and (max-width:1260px)
+    body 
+        min-width: fit-content
+        +dimension(fit-content,auto)
+    
+    
+    h2
+        +font-size(12px)
+    
+    p
+        +font-size(15px)
+        line-height: 15px
+    
+    
+    // /* ===================================menu css starts===========================================*/
+    .menus
+        +font-size(14px)
+    
+    .menus ul li
+        margin-left: 6px
+
+    #menu1 i
+        margin-left: 1px
+    
+    .media-icons
+        +font-size(48px)
+        
+        
+    
+    .section img
+        +dimension(160px, auto)
+    
+    .footer
+        +dimension(auto,auto)
+        
+        &-link 
+            +font-size(18px)
+
+            &-each
+                +margin(20px,20px,20px,20px)
+    

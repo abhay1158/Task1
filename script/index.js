@@ -1,3 +1,4 @@
+import "../style/input.sass";
 // select tab1 button
 const tab1=document.getElementById("tabBtn1");
 // select tab2 button
