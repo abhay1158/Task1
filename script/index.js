@@ -1,4 +1,3 @@
-import "../style/input.sass";
 // select tab1 button
 const tab1=document.getElementById("tabBtn1");
 // select tab2 button
@@ -41,3 +40,5 @@ tab2.addEventListener("click",function(event){
 
 //display tab1 by default
 tab1.click();
+
+console.log("Abhay");
